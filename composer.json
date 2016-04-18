@@ -1,0 +1,8 @@
+{
+    "name": "jcsuzanne/caramel-l5",
+    "autoload": {
+        "psr-0" : {
+            "Caramel" : "src"
+        }
+    }
+}
