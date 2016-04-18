@@ -1,5 +1,17 @@
 {
     "name": "jcsuzanne/caramel-l5",
+    "description": "Ajax templating wrapper for Laravel 5",
+    "keywords": ["laravel 5","ajax"],
+    "homepage": "https://github.com/jcsuzanne/caramel-l5",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jean-Christophe Suzanne"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
     "autoload": {
         "psr-0" : {
             "Caramel" : "src"
