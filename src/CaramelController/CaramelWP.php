@@ -82,9 +82,11 @@ class CaramelController extends Controller
         if($wp_menu):
             foreach($wp_menu as $item):
                 $obj = (object) $item;
-                $title = $obj->title;
-                $slug = Str::slug($title);
+                $objectID = (int) $obj->object_id;
                 $id = $obj->ID;
+                $post = get_post($obj->object_id);
+                $title = $obj->title;
+                $slug = $post->post_name;
                 $parent = $obj->menu_item_parent;
                 if($parent != '0'):
                     $menu[$parent]['children'][$id] = array(
